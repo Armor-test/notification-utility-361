@@ -1,0 +1,34 @@
+# CODEOWNERS file for notification-utility-361
+# Global owners - will be requested for all PRs
+* @Armor-test/grp-search @Armor-test/squad-tooling @Armor-test/team-frontend
+
+# Directory ownership
+/test/ @Armor-test/squad-product @Armor-test/grp-search @Armor-test/unit-cloud
+/shared/ @Armor-test/squad-api @Armor-test/dept-security @Armor-test/squad-qa
+/tools/ @Armor-test/team-reporting @Armor-test/team-security
+/data/ @Armor-test/squad-cloud @Armor-test/squad-api
+/vendor/ @Armor-test/team-governance @Armor-test/dept-data
+/plugins/ @Armor-test/dept-reporting @Armor-test/dept-logging @Armor-test/grp-ui
+/security/ @Armor-test/dept-api @Armor-test/grp-payments
+/views/ @Armor-test/grp-storage @Armor-test/squad-api @Armor-test/unit-governance
+/docs/ @Armor-test/dept-ui @Armor-test/grp-search
+/build/ @Armor-test/dept-automation @Armor-test/grp-search
+
+# File type ownership
+*.swift @Armor-test/squad-reporting @Armor-test/dept-data @Armor-test/dept-automation
+*.js @Armor-test/dept-identity @Armor-test/squad-product
+*.sql @Armor-test/grp-search @Armor-test/team-research
+*.xml @Armor-test/dept-automation @Armor-test/squad-apps
+*.h @Armor-test/squad-research @Armor-test/unit-design @Armor-test/squad-qa
+*.gradle @Armor-test/grp-ui @Armor-test/team-governance
+*.graphql @Armor-test/squad-database @Armor-test/grp-integration
+*.md @Armor-test/dept-api @Armor-test/team-governance @Armor-test/team-reporting
+*.sh @Armor-test/unit-governance @Armor-test/team-security @Armor-test/unit-design
+*.tsx @Armor-test/grp-reporting @Armor-test/dept-billing @Armor-test/unit-test
+*.kt @Armor-test/squad-qa @Armor-test/team-core
+*.rs @Armor-test/dept-reliability @Armor-test/dept-reporting @Armor-test/squad-api
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
